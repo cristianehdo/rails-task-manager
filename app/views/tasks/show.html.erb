@@ -1,6 +1,12 @@
 <h1><%= @task.title %></h1>
 
 <h3><%= @task.details %></h3>
-<p></p>
 
-<%= link_to "Task's list", tasks_path %>
+<ul class="list-inline list-unstyled">
+  <li>
+    <p><%= link_to "Task's list", tasks_path %></p>
+  </li>
+  <li>
+    <p><%= link_to "Edit", edit_task_path(@task) %></p>
+  </li>
+</ul>
